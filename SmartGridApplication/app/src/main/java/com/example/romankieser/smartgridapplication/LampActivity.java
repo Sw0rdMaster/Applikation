@@ -1,6 +1,5 @@
 package com.example.romankieser.smartgridapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -8,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by Roman Kieser on 21.10.2015.
+ */
+public class LampActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Komfort"));
-        tabLayout.addTab(tabLayout.newTab().setText("Energieeffizienz"));
-        tabLayout.addTab(tabLayout.newTab().setText("Security"));
+        tabLayout.addTab(tabLayout.newTab().setText("Informationen"));
+        tabLayout.addTab(tabLayout.newTab().setText("Video"));
+        tabLayout.addTab(tabLayout.newTab().setText("Weitere Links"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final KategorienManager adapter = new KategorienManager
+        final LampManager adapter = new LampManager
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -48,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     @Override
@@ -66,5 +64,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }
