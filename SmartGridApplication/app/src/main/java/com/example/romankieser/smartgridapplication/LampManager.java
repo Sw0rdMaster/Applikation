@@ -20,13 +20,13 @@ public class LampManager extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                Lamp_Info tab1 = new Lamp_Info();
+                Info_Tab_Info tab1 = new Info_Tab_Info();
                 return tab1;
             case 1:
-                Lamp_Video tab2 = new Lamp_Video();
+                Info_Tab_Videos tab2 = new Info_Tab_Videos();
                 return tab2;
             case 2:
-                Lamp_Link tab3 = new Lamp_Link();
+                Info_Tab_Links tab3 = new Info_Tab_Links();
                 return tab3;
             default:
                 return null;

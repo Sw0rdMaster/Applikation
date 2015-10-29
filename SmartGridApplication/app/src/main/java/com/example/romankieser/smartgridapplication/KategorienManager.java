@@ -17,13 +17,13 @@ public class KategorienManager extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                X_Komfort tab1 = new X_Komfort();
+                Tab_Komfort tab1 = new Tab_Komfort();
                 return tab1;
             case 1:
-                X_Energieeffizienz tab2 = new X_Energieeffizienz();
+                Tab_EnergieEffizienz tab2 = new Tab_EnergieEffizienz();
                 return tab2;
             case 2:
-                X_Security tab3 = new X_Security();
+                Tab_Sicherheit tab3 = new Tab_Sicherheit();
                 return tab3;
             default:
                 return null;

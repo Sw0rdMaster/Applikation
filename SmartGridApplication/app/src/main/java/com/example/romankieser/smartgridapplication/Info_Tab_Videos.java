@@ -5,14 +5,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.VideoView;
 
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
-public class Lamp_Info extends Fragment {
+public class Info_Tab_Videos extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.lamp_info, container, false);
+        View view = inflater.inflate(R.layout.lamp_video, container, false);
+        playVideo(view);
+        return view;
+    }
+
+    public void playVideo(View view)
+    {
     }
 }

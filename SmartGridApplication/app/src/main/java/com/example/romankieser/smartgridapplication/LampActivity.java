@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 /**
  * Created by Roman Kieser on 21.10.2015.
@@ -25,6 +26,9 @@ public class LampActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Video"));
         tabLayout.addTab(tabLayout.newTab().setText("Weitere Links"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        //
+        //
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final LampManager adapter = new LampManager

@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Energieeffizienz"));
         tabLayout.addTab(tabLayout.newTab().setText("Security"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final KategorienManager adapter = new KategorienManager
