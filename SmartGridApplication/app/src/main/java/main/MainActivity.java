@@ -1,6 +1,5 @@
-package com.example.romankieser.smartgridapplication;
+package main;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -8,9 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.view.Window;
+
+import objects.KategorienManager;
+import com.example.romankieser.smartgridapplication.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,20 +18,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        //TabLayout.Tab tab = tabLayout.newTab().setText("Hello");
         tabLayout.addTab(tabLayout.newTab().setText("Komfort"));
         tabLayout.addTab(tabLayout.newTab().setText("Energieeffizienz"));
-        tabLayout.addTab(tabLayout.newTab().setText("Security"));
+        tabLayout.addTab(tabLayout.newTab().setText("Sicherheit"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final KategorienManager adapter = new KategorienManager
                 (getSupportFragmentManager(), tabLayout.getTabCount());
+
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

@@ -1,4 +1,4 @@
-package com.example.romankieser.smartgridapplication;
+package video;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.example.romankieser.smartgridapplication.R;
 
 /**
  * Created by Roman Kieser on 29.10.2015.

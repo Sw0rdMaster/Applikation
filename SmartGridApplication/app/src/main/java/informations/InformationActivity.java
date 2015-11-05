@@ -1,4 +1,4 @@
-package com.example.romankieser.smartgridapplication;
+package informations;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,12 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+
+import com.example.romankieser.smartgridapplication.R;
 
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
-public class LampActivity extends AppCompatActivity {
+public class InformationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class LampActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Informationen"));
-        tabLayout.addTab(tabLayout.newTab().setText("Video"));
+        tabLayout.addTab(tabLayout.newTab().setText("video"));
         tabLayout.addTab(tabLayout.newTab().setText("Weitere Links"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
@@ -31,7 +32,7 @@ public class LampActivity extends AppCompatActivity {
         //
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final LampManager adapter = new LampManager
+        final InformationManager adapter = new InformationManager
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
