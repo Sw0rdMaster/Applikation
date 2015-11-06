@@ -19,7 +19,7 @@ public class Info_Tab_Info extends Fragment {
         View view = inflater.inflate(R.layout.information_fragment_info, container, false);
         //
         TextView txt = (TextView)view.findViewById(R.id.info_text);
-        txt.setText(R.string.text_lamp);
+        txt.setText(R.string.lorem_ipsum);
         //
         return view;
 
