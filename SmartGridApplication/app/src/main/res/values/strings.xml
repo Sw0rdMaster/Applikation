@@ -13,4 +13,10 @@
         accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
         sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
 
+    <string name="welcome">Herzlich Willkommen</string>
+    <string name="welcome_text">Wenn Sie bereit sind, dann drücken Sie auf "Los"</string>
+    <string name="choose_service">Wie werden Objekte gewählt?</string>
+    <string name="service_qrcode">Scannen des QR-Codes mit der Kamera</string>
+    <string name="service_manual">Manuelle Auswahl der Objekte</string>
+
 </resources>

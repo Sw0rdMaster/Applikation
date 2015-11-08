@@ -24,7 +24,7 @@ public class InformationActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Informationen"));
-        tabLayout.addTab(tabLayout.newTab().setText("video"));
+        tabLayout.addTab(tabLayout.newTab().setText("Video"));
         tabLayout.addTab(tabLayout.newTab().setText("Weitere Links"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 

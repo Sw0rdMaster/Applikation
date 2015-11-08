@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 
 import informations.InformationActivity;
 import com.example.romankieser.smartgridapplication.R;
+import com.google.zxing.integration.android.IntentIntegrator;
+
 import video.VideoPlayerActivity;
 
 public class Tab_Komfort extends Fragment {
@@ -20,6 +22,7 @@ public class Tab_Komfort extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_komfort, container, false);
         lampActivity(v);
+        scanActivity(v);
         //setImage(v);
         return v;
     }
@@ -35,6 +38,24 @@ public class Tab_Komfort extends Fragment {
                 startActivity(intent);
             }
         });
+    }
+
+    public void scanActivity(View v)
+    {
+        Button scan = (Button) v.findViewById(R.id.scan_button);
+        scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doScan();
+            }
+        });
+
+    }
+
+    public void doScan()
+    {
+        FragmentIntentIntegrator integrator = new FragmentIntentIntegrator(this);
+        integrator.initiateScan();
     }
 
     public void setImage(View v)
