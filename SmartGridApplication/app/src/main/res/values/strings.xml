@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">SmartGridApplication</string>
     <string name="action_settings">Settings</string>
-    <string name="text_lamp">Ich bin die Lampe!</string>
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -18,5 +17,11 @@
     <string name="choose_service">Wie werden Objekte gewählt?</string>
     <string name="service_qrcode">Scannen des QR-Codes mit der Kamera</string>
     <string name="service_manual">Manuelle Auswahl der Objekte</string>
+
+    <string name="text_lampe"><b>Informationen Lampe</b>\n\nLampen können nicht nur durch den On/Off-Knopf bedient werden.
+        Mittels Handbewegungen kann die Helligkeit und Farbe
+        der Lampe beeinflusst werden. Dafür wird ein Tool benötigt,
+        welches die Bewegungen eines Menschen interpretieren kann.
+        Dies im iHomeLab über die Kinect Kamera ermöglicht.  </string>
 
 </resources>

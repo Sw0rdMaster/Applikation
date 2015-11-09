@@ -22,7 +22,6 @@ public class Tab_Komfort extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_komfort, container, false);
         lampActivity(v);
-        scanActivity(v);
         //setImage(v);
         return v;
     }
@@ -34,29 +33,12 @@ public class Tab_Komfort extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), InformationActivity.class);
-                intent.putExtra("lamp", true);
+                intent.putExtra("object", "lamp");
                 startActivity(intent);
             }
         });
     }
 
-    public void scanActivity(View v)
-    {
-        Button scan = (Button) v.findViewById(R.id.scan_button);
-        scan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                doScan();
-            }
-        });
-
-    }
-
-    public void doScan()
-    {
-        FragmentIntentIntegrator integrator = new FragmentIntentIntegrator(this);
-        integrator.initiateScan();
-    }
 
     public void setImage(View v)
     {

@@ -14,6 +14,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import informations.Info_Tab_Info;
+import informations.InformationActivity;
 import main.MainActivity;
 
 /**
@@ -79,8 +80,8 @@ public class ChooseService extends Activity {
             String barcode;
 
             barcode = scanResult.getContents();
-            
-            Intent codeIntent = new Intent(this, Info_Tab_Info.class);
+
+            Intent codeIntent = new Intent(this, InformationActivity.class);
             codeIntent.putExtra("object", barcode);
             startActivity(codeIntent);
 

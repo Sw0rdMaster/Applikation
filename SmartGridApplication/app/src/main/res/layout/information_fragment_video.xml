@@ -2,31 +2,65 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#2984b1">
 
-    <TextView
-        android:id="@+id/info_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Tab 2"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
 
-    <VideoView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/playVid"
-        android:layout_below="@+id/info_text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Video1"
+            android:id="@+id/video_text1"
+            android:textSize="35dp"
+            android:textIsSelectable="true"
+            android:layout_above="@+id/vidButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play Video"
-        android:id="@+id/vidButton"
-        android:layout_above="@+id/info_text"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Play Video"
+            android:id="@+id/vidButton"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/video_text1"
+            android:layout_toEndOf="@+id/video_text1"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Video2"
+            android:id="@+id/textView"
+            android:textSize="35dp"
+            android:textIsSelectable="true"
+            android:layout_above="@+id/vidButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Play Video"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/video_text1"
+            android:layout_toEndOf="@+id/video_text1"
+            android:layout_marginBottom="88dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

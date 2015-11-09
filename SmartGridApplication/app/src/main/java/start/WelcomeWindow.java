@@ -47,5 +47,7 @@ public class WelcomeWindow extends Activity {
                 startActivity(intent);
             }
         });
+
+        //wButton.setVisibility(View.INVISIBLE);
     }
 }

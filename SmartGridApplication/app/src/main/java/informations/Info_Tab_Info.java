@@ -26,10 +26,10 @@ public class Info_Tab_Info extends Fragment {
     public void intentHandler(View view)
     {
         TextView txt = (TextView)view.findViewById(R.id.info_text);
-        String choice = getActivity().getIntent().getExtras().getString("object");
+        String choice = getArguments().getString("object");
         switch(choice)
         {
-            case "lamp" : txt.setText("Ich bin eine Lampe");
+            case "lamp" : txt.setText(R.string.text_lampe);
         }
     }
 }
