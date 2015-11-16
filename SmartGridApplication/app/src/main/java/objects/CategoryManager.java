@@ -8,10 +8,10 @@ import objects.Tab_EnergieEffizienz;
 import objects.Tab_Komfort;
 import objects.Tab_Sicherheit;
 
-public class KategorienManager extends FragmentStatePagerAdapter {
+public class CategoryManager extends FragmentStatePagerAdapter {
     int mNumOfTabs;
 
-    public KategorienManager(FragmentManager fm, int NumOfTabs) {
+    public CategoryManager(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
     }

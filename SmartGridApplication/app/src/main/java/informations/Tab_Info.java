@@ -13,7 +13,7 @@ import com.example.romankieser.smartgridapplication.R;
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
-public class Info_Tab_Info extends Fragment {
+public class Tab_Info extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

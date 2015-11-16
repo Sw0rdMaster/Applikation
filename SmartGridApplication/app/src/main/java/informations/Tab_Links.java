@@ -11,7 +11,7 @@ import com.example.romankieser.smartgridapplication.R;
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
-public class Info_Tab_Links extends Fragment {
+public class Tab_Links extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

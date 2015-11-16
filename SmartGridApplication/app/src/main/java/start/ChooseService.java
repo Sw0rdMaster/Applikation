@@ -6,16 +6,14 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.romankieser.smartgridapplication.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import informations.Info_Tab_Info;
 import informations.InformationActivity;
-import main.MainActivity;
+import objects.CategoryActivity;
 
 /**
  * Created by Roman Kieser on 08.11.2015.
@@ -68,7 +66,7 @@ public class ChooseService extends Activity {
 
     public void openChoice()
     {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CategoryActivity.class);
         startActivity(intent);
     }
 

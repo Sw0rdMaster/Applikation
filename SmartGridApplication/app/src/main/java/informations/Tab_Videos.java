@@ -15,7 +15,7 @@ import video.VideoPlayerActivity;
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
-public class Info_Tab_Videos extends Fragment {
+public class Tab_Videos extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

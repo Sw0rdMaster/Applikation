@@ -10,17 +10,10 @@ import android.widget.TextView;
 
 import com.example.romankieser.smartgridapplication.R;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Type;
-
-import informations.InformationActivity;
-import main.MainActivity;
-
 /**
  * Created by Roman Kieser on 07.11.2015.
  */
-public class WelcomeWindow extends Activity {
+public class WelcomeScreen extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

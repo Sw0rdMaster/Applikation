@@ -1,4 +1,4 @@
-package main;
+package objects;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,13 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
 
-import objects.KategorienManager;
+import objects.CategoryManager;
 import com.example.romankieser.smartgridapplication.R;
 
 
-public class MainActivity extends AppCompatActivity {
+public class CategoryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final KategorienManager adapter = new KategorienManager
+        final CategoryManager adapter = new CategoryManager
                 (getSupportFragmentManager(), tabLayout.getTabCount());
 
         viewPager.setAdapter(adapter);

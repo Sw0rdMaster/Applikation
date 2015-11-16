@@ -5,10 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import informations.Info_Tab_Info;
-import informations.Info_Tab_Links;
-import informations.Info_Tab_Videos;
-
 /**
  * Created by Roman Kieser on 21.10.2015.
  */
@@ -29,14 +25,14 @@ public class InformationManager extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                Info_Tab_Info tab1 = new Info_Tab_Info();
+                Tab_Info tab1 = new Tab_Info();
                 tab1.setArguments(bundle);
                 return tab1;
             case 1:
-                Info_Tab_Videos tab2 = new Info_Tab_Videos();
+                Tab_Videos tab2 = new Tab_Videos();
                 return tab2;
             case 2:
-                Info_Tab_Links tab3 = new Info_Tab_Links();
+                Tab_Links tab3 = new Tab_Links();
                 return tab3;
             default:
                 return null;
