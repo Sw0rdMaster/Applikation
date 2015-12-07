@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import information.InformationActivityNew;
 import informations.InformationActivity;
 import com.example.romankieser.smartgridapplication.R;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -22,7 +23,6 @@ public class Tab_Komfort extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_komfort, container, false);
         lampActivity(v);
-        //setImage(v);
         return v;
     }
 
@@ -32,17 +32,11 @@ public class Tab_Komfort extends Fragment {
         lamp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), InformationActivity.class);
+                Intent intent = new Intent(getActivity(), InformationActivityNew.class);
                 intent.putExtra("object", "lamp");
                 startActivity(intent);
             }
         });
     }
 
-
-    public void setImage(View v)
-    {
-        ImageButton img = (ImageButton) v.findViewById(R.id.imgButton2);
-        img.setImageResource(R.mipmap.questionmark);
-    }
 }

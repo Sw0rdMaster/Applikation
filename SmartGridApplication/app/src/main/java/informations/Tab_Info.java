@@ -29,7 +29,7 @@ public class Tab_Info extends Fragment {
         String choice = getArguments().getString("object");
         switch(choice)
         {
-            case "lamp" : txt.setText(R.string.text_lampe);
+            case "lamp" : txt.setText(R.string.smartgrid_lamp);
         }
     }
 }

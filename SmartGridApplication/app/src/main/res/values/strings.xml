@@ -24,4 +24,7 @@
         welches die Bewegungen eines Menschen interpretieren kann.
         Dies im iHomeLab über die Kinect Kamera ermöglicht.  </string>
 
+        <string name="smartgrid_lamp"><b>Vergleich Lampen</b>\n\ <b>Art</b> Glühlampe \t LED-Lampe \n
+    XYZ</string>
+
 </resources>

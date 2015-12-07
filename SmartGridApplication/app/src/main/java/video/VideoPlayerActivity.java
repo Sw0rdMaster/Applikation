@@ -26,7 +26,7 @@ public class VideoPlayerActivity extends Activity implements MediaPlayer.OnCompl
         String url = null;
         if (getIntent().getExtras() != null) {
             url = getIntent().getExtras().getString("url");
-            url = "mnt/sdcard/movies/1.mp4";
+            //url = "mnt/sdcard/movies/1.mp4";
             if (url != null) {
                 v.setMediaController(new MediaController(this));
                 v.setOnCompletionListener(this);

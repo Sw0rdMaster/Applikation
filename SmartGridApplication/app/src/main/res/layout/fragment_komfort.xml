@@ -22,7 +22,8 @@
                 android:text="Lampe"
                 android:id="@+id/bLamp"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/stehlampe" />
 
         </LinearLayout>
 
@@ -32,12 +33,6 @@
             android:layout_height="match_parent"
             android:weightSum="1">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Scan"
-                android:id="@+id/scan_button" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -46,15 +41,6 @@
             android:layout_height="match_parent"
             android:weightSum="1">
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/imgButton2"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
-                android:padding="0dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/fragezeichen" />
         </LinearLayout>
 
         <LinearLayout
@@ -63,10 +49,6 @@
             android:layout_height="match_parent"
             android:weightSum="1">
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/imageButton" />
         </LinearLayout>
 
     </LinearLayout>
